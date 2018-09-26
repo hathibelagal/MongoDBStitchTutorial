@@ -57,7 +57,7 @@ class MainActivity : AppCompatActivity() {
                             output.append(
                                 DateUtils.getRelativeDateTimeString(
                                         this@MainActivity,
-                                        it["time"].toString().toLong(), // Convert the value of the 'time' key
+                                        it["time"] as Long, // Convert the value of the 'time' key
                                         DateUtils.SECOND_IN_MILLIS,     // to a Long
                                         DateUtils.WEEK_IN_MILLIS,
                                         0
